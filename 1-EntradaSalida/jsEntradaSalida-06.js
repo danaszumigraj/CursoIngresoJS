@@ -10,10 +10,11 @@ function sumar()
 
 	numeroUno = document.getElementById ("txtIdNumeroUno").value;
 	numeroDos = document.getElementById ("txtIdNumeroDos").value;
-	resultado = (numeroUno+numeroDos);
 	
-	parseInt (numeroUno);
-	parseInt (numeroDos);
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
+	resultado = (numeroUno + numeroDos);
 
 	alert("El resultado es: " + resultado)
 
