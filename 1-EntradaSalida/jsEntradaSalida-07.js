@@ -54,7 +54,7 @@ function multiplicar()
 
 	resultado = (numeroUno * numeroDos);
 
-	alert("La multiplicación es " + resultado);
+	alert("El producto es " + resultado);
 	
 }
 
@@ -72,7 +72,7 @@ function dividir()
 
 	resultado = (numeroUno / numeroDos);
 
-	alert("La división es " + resultado);
+	alert("El cociente es " + resultado);
 	
 }
 
