@@ -11,13 +11,9 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 function Sumar () 
 {
 
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+	precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
 	resultado = precioUno + precioDos + precioTres
 
@@ -26,13 +22,9 @@ function Sumar ()
 function Promedio () 
 {
 
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+	precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
 	resultado = (precioUno + precioDos + precioTres) / 3
 
@@ -43,13 +35,9 @@ function PrecioFinal ()
 {
 	var impuesto;
 
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+	precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
 	resultado = precioUno + precioDos + precioTres
 	impuesto = 21 / 100
