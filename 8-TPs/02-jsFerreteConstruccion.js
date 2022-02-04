@@ -1,21 +1,22 @@
-/*2.	Para el departamento de Construcción:
+/*
+Dana Szumigraj DIV E
+TP 2
+2.	Para el departamento de Construcción:
 A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
 B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
 
-function Rectangulo () 
-{
 	var largoTerreno;
 	var anchoTerreno;
 	var hiloAlambre;
 	var resultado;
 
-	largoTerreno = document.getElementById("txtIdLargo").value;
-	anchoTerreno = document.getElementById("txtIdAncho").value;
+function Rectangulo () 
+{
 
-	largoTerreno = parseFloat(largoTerreno);
-	anchoTerreno = parseFloat(anchoTerreno);
+	largoTerreno = parseFloat(document.getElementById("txtIdLargo").value);
+	anchoTerreno = parseFloat(document.getElementById("txtIdAncho").value);
 
 	hiloAlambre = 3;
 	largoTerreno = largoTerreno * 2;
@@ -25,19 +26,13 @@ function Rectangulo ()
 
 	alert("La cantidad de hilos a comprar es " + resultado);
 
-
-
 }
 function Circulo () 
 {
 	var radioTerreno;
 	var circunferencia
-	var hiloAlambre;
-	var resultado;
 
-	radioTerreno = document.getElementById("txtIdRadio").value;
-
-	radioTerreno = parseFloat(radioTerreno);
+	radioTerreno = parseFloat(document.getElementById("txtIdRadio").value);
 
 	hiloAlambre = 3;
 	
@@ -48,17 +43,13 @@ function Circulo ()
 }
 function Materiales () 
 {
-	var largoTerreno
-	var anchoTerreno
+
 	var areaTerreno
 	var bolsaCemento
 	var bolsaCal
 
-	largoTerreno = document.getElementById("txtIdLargo").value;
-	anchoTerreno = document.getElementById("txtIdAncho").value;
-
-	largoTerreno = parseFloat(largoTerreno);
-	anchoTerreno = parseFloat(anchoTerreno);
+	largoTerreno = parseFloat(document.getElementById("txtIdLargo").value);
+	anchoTerreno = parseFloat(document.getElementById("txtIdAncho").value);
 
 	areaTerreno = largoTerreno*anchoTerreno;
 

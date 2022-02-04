@@ -1,4 +1,7 @@
-/*1.	Para el departamento de facturación:
+/*
+Dana Szumigraj DIV E
+TP 1
+1.	Para el departamento de facturación:
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
@@ -15,9 +18,9 @@ function Sumar ()
 	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
 	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-	resultado = precioUno + precioDos + precioTres
+	resultado = (precioUno + precioDos + precioTres);
 
-	alert("La suma es " + resultado)
+	alert("La suma es " + resultado);
 }
 function Promedio () 
 {
@@ -26,7 +29,7 @@ function Promedio ()
 	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
 	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-	resultado = (precioUno + precioDos + precioTres) / 3
+	resultado = ((precioUno + precioDos + precioTres) / 3);
 
 	alert("El promedio es " + resultado)
 	
@@ -39,11 +42,11 @@ function PrecioFinal ()
 	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
 	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-	resultado = precioUno + precioDos + precioTres
-	impuesto = 21 / 100
+	resultado = (precioUno + precioDos + precioTres);
+	impuesto = (21 / 100);
 
-	resultado = resultado + (resultado * impuesto)
+	resultado = (resultado + (resultado * impuesto));
 
-	alert("El precio final es " + resultado)
+	alert("El precio final es " + resultado);
 
 }
