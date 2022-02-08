@@ -2,12 +2,12 @@ function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 	
-	var numero
-	var maximo = 10;
-	var minimo = 1; 
+	var aleatorio = Math.random();
+	var enteroAleatorio;
+	
 
-	numero = Math.round(Math.random () * (maximo - minimo) + minimo);
+	enteroAleatorio = Math.floor(aleatorio * (10 - 1 + 1) + 1);
 
-	alert(numero);
+	alert(enteroAleatorio);
 
 }//FIN DE LA FUNCIÓN

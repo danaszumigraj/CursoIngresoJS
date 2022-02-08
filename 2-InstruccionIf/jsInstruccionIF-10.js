@@ -1,25 +1,25 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	var numero
-	var maximo = 10;
-	var minimo = 1; 
+	var aleatorio = Math.random();
+	var enteroAleatorio;
+	
 
-	numero = Math.round(Math.random () * (maximo - minimo) + minimo);
+	enteroAleatorio = Math.floor(aleatorio * (10 - 1 + 1) + 1);
 
-	if (numero>=9)
+	if (enteroAleatorio>=9)
 	{
-		alert("La nota es " + numero + " .EXCELENTE")
+		alert("La nota es " + enteroAleatorio + ". EXCELENTE")
 	}
 	else
 	{
-		if (numero > 4)
+		if (enteroAleatorio > 4)
 		{
-			alert("La nota es " + numero + " .APROBÓ")
+			alert("La nota es " + enteroAleatorio + ". APROBÓ")
 		}
 		else
 		{
-			alert("La nota es " + numero + " .Vamos, la proxima se puede")
+			alert("La nota es " + enteroAleatorio + ". Vamos, la proxima se puede")
 		}
 	}
 

@@ -10,5 +10,123 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	var cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
+    var marcaLamparas = document.getElementById("Marca").value;
+    var precioLampara = 35;
+
+    switch (marcaLamparas)
+     {
+         case "ArgentinaLuz":
+            if(cantidadLamparas = 5)
+                {
+                    alert("El descuento es del 40%, precio final: " + (precioLampara * cantidadLamparas)*40/100);
+                }
+
+            else if(cantidadLamparas = 4)
+                {
+                    alert("El descuento es del 25%, precio final: " + (precioLampara * cantidadLamparas)*25/100);
+                }
+                else if (cantidadLamparas = 3)
+                    {
+                        alert("El descuento es del 15%, precio final: " + (precioLampara * cantidadLamparas)*15/100);
+                    }
+                    else
+                    {
+                        alert("No hay descuento, precio final: " + precioLampara * cantidadLamparas)
+                    }
+        break;
+
+        case "FelipeLamparas":
+            if(cantidadLamparas = 5)
+                {
+                    alert("El descuento es del 30%, precio final: " + (precioLampara * cantidadLamparas)*30/100);
+                }
+            else if(cantidadLamparas = 4)
+            {
+                alert("El descuento es del 25%, precio final: " + (precioLampara * cantidadLamparas)*25/100);
+            }
+                else if (cantidadLamparas = 3)
+                {
+                    alert("El descuento es del 10%, precio final: " + (precioLampara * cantidadLamparas)*10/100)
+                }
+                else
+                    {
+                        alert("No hay descuento, precio final: " + precioLampara * cantidadLamparas)
+                    }
+        break;
+        
+        case "JeLuz":
+        case "HazIluminacion":
+        case "Osram":
+            if(cantidadLamparas = 5)
+                {
+                    alert("El descuento es del 30%, precio final: " + (precioLampara * cantidadLamparas)*30/100);
+                }
+            else if(cantidadLamparas = 4)
+                {
+                    alert("El descuento es del 20%, precio final: " + (precioLampara * cantidadLamparas)*20/100);
+                }
+                else if (cantidadLamparas = 3)
+                {
+                    alert("El descuento es del 5%, precio final: " + (precioLampara * cantidadLamparas)*5/100)
+                }
+                else
+                    {
+                        alert("No hay descuento, precio final: " + precioLampara * cantidadLamparas)
+                    }
+        break;
+
+        default:
+            alert("El descuento es del 50%, precio final: " + (precioLampara * cantidadLamparas)*50/100)
+        
+     }
+
+     /*switch (cantidadLamparas)
+    {
+        case "1":
+        case "2":
+        alert("No hay descuento, precio final: " + precioLampara * cantidadLamparas);
+        
+
+        case "3":
+            if (marcaLamparas == "ArgentinaLuz")
+            {
+                alert("El descuento es del 15%, precio final: " + (precioLampara * cantidadLamparas)*15/100);
+            }
+            else if (marcaLamparas == "FelipeLamparas")
+                {
+                    alert("El descuento es del 10%, precio final: " + (precioLampara * cantidadLamparas)*10/100);
+                }
+                else
+                {
+                    alert("El descuento es del 5%, precio final: " + (precioLampara * cantidadLamparas)*5/100);
+                }
+        
+
+        case "4":
+            if (marcaLamparas == "ArgentinaLuz" || "FelipeLamparas" )
+            {
+                alert("El descuento es del 25%, precio final: " + (precioLampara * cantidadLamparas)*25/100);
+            }
+            else
+            {
+                alert("El descuento es del 20%, precio final: " + (precioLampara * cantidadLamparas)*20/100);
+            }
+        
+
+        case "5":
+            if(marcaLamparas == "ArgentinaLuz")
+            {
+                alert("El descuento es del 40%, precio final: " + (precioLampara * cantidadLamparas)*40/100);
+            }
+            else
+            {
+                alert("El descuento es del 30%, precio final: " + (precioLampara * cantidadLamparas)*30/100);
+            }
+        
+
+    }*/
+
+     
+
 }
