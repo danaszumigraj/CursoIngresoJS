@@ -1,8 +1,13 @@
+/* 
+Dana Szumigraj DIV E
+SWITCH Ej 6
+*/
+
 function mostrar()
 {
 	//tomo la hora
-	var hora
-	hora = document.getElementById("txtIdHora").value
+	var hora = document.getElementById("txtIdHora").value;
+	var mensaje;
 
 	switch (hora)
 	{
@@ -11,7 +16,7 @@ function mostrar()
 		case "9":
 		case "10":
 		case "11":
-		alert("Es de mañana.");
+		mensaje = "Es de mañana.";
 		break;
 
 		case "12":
@@ -22,7 +27,7 @@ function mostrar()
 		case "17":
 		case "18":
 		case "19":
-		alert("Es de tarde.");
+		mensaje = "Es de tarde.";
 		break;
 
 		case "20":
@@ -37,11 +42,11 @@ function mostrar()
 		case "4":
 		case "5":
 		case "6":
-		alert("Es de noche.")
+		mensaje = "Es de noche.";
 		break;
 
 		default:
-		alert("La hora no existe.")
+		mensaje = "La hora no existe.";
 	}
 
 	/*

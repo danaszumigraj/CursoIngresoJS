@@ -1,28 +1,37 @@
+/* 
+Dana Szumigraj DIV E
+SWITCH Ej 1
+*/
+
 function mostrar()
 {
 	//tomo el mes
-	var mes;
-	mes = document.getElementById("txtIdMes").value;
+	var mes = document.getElementById("txtIdMes").value;
 
 	switch(mes)
 	{
 		case "Enero":
-			alert("que comiences bien el año!!!.");
+			mensaje = "que comiences bien el año!!!.";
 			break;
 
 		case "Marzo":
-			alert("a clases!!!.");
+			mensaje = "a clases!!!.";
 			break;
 
 		case "Julio":
-			alert("se vienen las vacaciones!!!.")
+			mensaje = "se vienen las vacaciones!!!.";
 			break;
 
 		case "Diciembre":
-			alert("Felices fiesta!!!.")
+			mensaje = "Felices fiestas!!!."
 			break;
 
+		default:
+			mensaje = "No hay eventos en este mes"
+
 	}
+
+	alert (mensaje);
 		
 
 

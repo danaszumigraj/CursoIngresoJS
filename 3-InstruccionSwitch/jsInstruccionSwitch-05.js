@@ -1,8 +1,12 @@
+/* 
+Dana Szumigraj DIV E
+SWITCH Ej 5
+*/
+
 function mostrar()
 {
 	//tomo la hora
-	var hora
-	hora = document.getElementById("txtIdHora").value
+	var hora = document.getElementById("txtIdHora").value
 
 	switch (hora)
 	{
@@ -11,10 +15,15 @@ function mostrar()
 		case "9":
 		case "10":
 		case "11":
-		alert("Es de mañana.");
+		mensaje = "Es de mañana.";
+		break;
+
+		default:
+		mensaje = "No es de mañana";
 		break;
 	}
 	
+	alert (mensaje);
 	
 
 
