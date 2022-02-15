@@ -1,27 +1,28 @@
 function mostrar()
 {
-	var destinoIngresado
-	destinoIngresado = document.getElementById("txtIdDestino").value
+	var destinoIngresado = document.getElementById("txtIdDestino").value
+	var mensaje 
 
 	switch (destinoIngresado)
 	{
 		case "Bariloche":
-		alert("Oeste");
+		mensaje = "Oeste";
 		break;
 
 		case "Cataratas":
-		alert("Norte");
+		mensaje = "Norte";
 		break;
 
 		case "Mar del plata":
-		alert("Este");
+		mensaje = "Este"
 		break;
 
 		case "Ushuaia":
-		alert("Sur");
+		mensaje = "Sur"
 		break;
 	}
 	
+	alert(mensaje);
 
 }//FIN DE LA FUNCIÓN
 //txtIdDestino

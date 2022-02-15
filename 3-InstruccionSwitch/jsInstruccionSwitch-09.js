@@ -1,13 +1,12 @@
 function mostrar()
 {
-	var estacion
-	var destino 
-	var tarifa
+	var estacion = document.getElementById("txtIdEstacion").value
+	var destino = document.getElementById("txtIdDestino").value 
+	var tarifa = 15000
 	
-	estacion = document.getElementById("txtIdEstacion").value
-	destino = document.getElementById("txtIdDestino").value 
-	tarifa = 15000
 
+	
+/*
 	switch(estacion)
 	{
 		case "Invierno":
@@ -54,6 +53,60 @@ function mostrar()
 
 	}
 
+*/
+
+switch(estacion)
+{
+	case "Invierno":
+		switch(destino)
+		{
+			case "Bariloche":
+				tarifa = tarifa - ((20*tarifa)/100);
+			break;
+
+			case "Mar del plata":
+				tarifa = tarifa - ((20*tarifa)/100);
+			break;
+
+			default:
+				tarifa = tarifa - ((10*tarifa)/100);
+			break;
+		}
+		break;
+
+	case "Verano":
+		switch(destino)
+		{
+			case "Bariloche":
+				tarifa = tarifa - ((20*tarifa)/100);
+			break;
+
+			case "Mar del plata":
+				tarifa = tarifa + ((20*tarifa)/100);
+			break; 
+
+			default:
+				tarifa = tarifa + ((10*tarifa)/100);
+			break;
+		}
+	break;
+
+	case "Primavera":
+	case "Otoño":
+		switch(destino)
+		{
+			case "Cordoba":
+				tarifa = 15000
+			break;
+
+			default:
+				tarifa = tarifa + ((10*tarifa)/100);
+			break;
+		}
+	break;
+}
+
+	alert (tarifa);
 
 
 }//FIN DE LA FUNCIÓN
