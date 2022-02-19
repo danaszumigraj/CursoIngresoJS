@@ -1,6 +1,6 @@
 /* 
 Dana Szumigraj DIV E
-SWITCH Ej 3
+SWITCH Ej 4
 */
 
 function mostrar()
@@ -28,11 +28,6 @@ function mostrar()
 	}
 
 	alert (mensaje);
-
-
-	
-	
-
 
 
 }//FIN DE LA FUNCIÓN

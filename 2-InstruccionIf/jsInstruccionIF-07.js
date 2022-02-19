@@ -9,7 +9,7 @@ function mostrar()
 
 	if (edad < 18 && estado != "Soltero")
 	{
-		alert("Es muy pequeño para NO ser soltero")
+		alert("Es muy pequeño para NO ser soltero");
 	}
 	
 
