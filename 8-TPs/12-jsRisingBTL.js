@@ -13,6 +13,31 @@ function ComenzarIngreso ()
  	var edadIngresada;
  	var sexoIngresado;
  	var estadoCivilIngresado;
+	var sueldoBruto;
+	var numeroLegajo;
+	var nacionalidad;
+
+	
+	edadIngresada = parseInt(prompt("Ingrese su edad (entre 18 y 90 años inclusive)"));
+	while(isNan(edadIngresada) || edadIngresada < 18 || edadIngresada > 90)
+	{
+		edadIngresada = parseInt(prompt("Error, ingrese su edad (entre 18 y 90 años inclusive)"));
+	}
+	
+	do
+	{
+		sexoIngresado = prompt("Ingrese su sexo (F o M)");
+	}while(sexoIngresado != "M" || sexoIngresado != "F")
+
+	do
+	{
+		estadoCivilIngresado = prompt("Ingrese su estado civil: 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos (solo el numero)");
+	}while (estadoCivilIngresado > 4 || estadoCivilIngresado <= 0)
+
+	do
+	{
+
+	}while (sueldoBruto)
 
 
 

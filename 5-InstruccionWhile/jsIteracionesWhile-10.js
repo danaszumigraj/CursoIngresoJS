@@ -29,7 +29,10 @@ function mostrar()
 
 	while(respuesta=="si")
 	{
-		numeroIngresado = parseInt(prompt("Ingrese un numero"));
+		do
+		{
+			numeroIngresado = parseInt(prompt("Ingrese un numero"));	
+		}while(isNaN(numeroIngresado)==true)
 
 		if (numeroIngresado == 0)
 		{
@@ -53,11 +56,33 @@ function mostrar()
 
 		
 		respuesta=prompt("desea continuar?");
+		while (respuesta != "si" && respuesta != "no")
+		{
+			respuesta = prompt("Error, quiere ingresar otro numero? (si o no)");
+		}
 	}//fin del while
 
+	diferencia = sumaPositivos - sumaNegativos;
 	promedioPositivos = sumaPositivos / contadorPositivos;
 	promedioNegativos = sumaNegativos / contadorNegativos;
-	diferencia = sumaPositivos - sumaNegativos;
 
-	document.write("La suma de negativos es: "+ sumaNegativos + "<br>" + "La suma de positivos es: " + sumaPositivos + "<br>" + "La cantidad de positivos es: " + contadorPositivos + "<br>" + "La cantidad de negativos es: " + contadorNegativos + "<br>" + "La cantidad de ceros es: " + contadorCeros + "<br>" + "La cantidad de numeros pares es: " + contadorPares + "<br>" + "El promedio de los positivos es" + promedioPositivos + "<br>" + "El promedio de los negativos es: " + promedioNegativos + "<br>" + "La diferencia entre positivos y negativos es: " + diferencia + "<br>");
+	if(isNaN(promedioNegativos))
+	{
+		promedioNegativos = 0;
+	}
+	if(isNaN(promedioPositivos))
+	{
+		promedioPositivos = 0;
+	}
+	
+
+	document.write("La suma de negativos es: "+ sumaNegativos + "<br>");
+	document.write("La suma de positivos es: " + sumaPositivos + "<br>");
+	document.write("La cantidad de positivos es: " + contadorPositivos + "<br>");
+	document.write("La cantidad de negativos es: " + contadorNegativos + "<br>");
+	document.write("La cantidad de ceros es: " + contadorCeros + "<br>");
+	document.write("La cantidad de numeros pares es: " + contadorPares + "<br>");
+	document.write("El promedio de los positivos es" + promedioPositivos + "<br>");
+	document.write("El promedio de los negativos es: " + promedioNegativos + "<br>");
+	document.write("La diferencia entre positivos y negativos es: " + diferencia + "<br>");
 }//FIN DE LA FUNCIÓN

@@ -17,7 +17,10 @@ function mostrar()
 	while(respuesta == "si")
 	{
 	
-	numeroIngresado = parseInt(prompt("Ingrese un numero"));	
+	do
+	{
+		numeroIngresado = parseInt(prompt("Ingrese un numero"));	
+	}while(isNaN(numeroIngresado)==true)
 		
 	if (banderaDelPrimero == 0)
 		{
@@ -35,14 +38,13 @@ function mostrar()
 			{
 				numeroMinimo = numeroIngresado;
 			}
-
 		}	
 
-		respuesta=prompt("desea continuar?");
+		respuesta=prompt("desea continuar? (si o no)");
 
-		while(!(respuesta == "si" && respuesta == "no"))
+		while (respuesta != "si" && respuesta != "no")
 		{
-				prompt("Error, quiere ingresar otro numero? (si o no)"); 	
+			respuesta = prompt("Error, quiere ingresar otro numero? (si o no)");
 		}
 	}
 	

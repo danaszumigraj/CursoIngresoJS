@@ -19,7 +19,7 @@ function mostrar()
 
 		respuesta = prompt("Quiere ingresar otro numero?");
 
-		while (respuesta != "si" && respuesta != "no")
+		if (respuesta != "si" && respuesta != "no")
 		{
 			prompt("Error, quiere ingresar otro numero? (si o no)");
 		}
