@@ -6,10 +6,10 @@ function mostrar()
 {
 	var contador = 0;
 	var acumulador = 0;
-	var numeroIngresado
-	var respuesta = "si"
+	var numeroIngresado;
+	//var respuesta = "si";
 
-	while(respuesta == "si")
+	do
 	{
 		numeroIngresado = prompt("Ingrese un numero");
 		numeroIngresado = parseInt (numeroIngresado);
@@ -18,7 +18,12 @@ function mostrar()
 		contador = contador + 1;
 
 		respuesta = prompt("Quiere ingresar otro numero?");
-	}
+
+		while (respuesta != "si" && respuesta != "no")
+		{
+			prompt("Error, quiere ingresar otro numero? (si o no)");
+		}
+	}while(respuesta == "si")
 
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/contador;
