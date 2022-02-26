@@ -61,7 +61,7 @@ function mostrar()
 		tipoProducto = tipoProducto.toLowerCase();
 		while(tipoProducto != "perfume" && tipoProducto != "shampoo" && tipoProducto != "maquillaje")
 		{
-			tipoProducto = prompt("Error, ingrese el tipo de producto (Perfume, Shampoo o Maquillaje");
+			tipoProducto = prompt("Error, ingrese el tipo de producto (Perfume, Shampoo o Maquillaje)");
 			tipoProducto = tipoProducto.toLowerCase();
 		}
 		
@@ -70,7 +70,7 @@ function mostrar()
 		precioProducto = parseInt(prompt("Ingrese el precio del producto"));
 		while(isNaN(precioProducto) == true || precioProducto < 1)
 		{
-			precioProducto = prompt("Error, ingrese el precio del producto (debe ser un numero");
+			precioProducto = prompt("Error, ingrese el precio del producto (debe ser un numero)");
 		}
 		
 		
@@ -82,29 +82,25 @@ function mostrar()
 		switch(vendedor)
 		{
 			//JUAN
-			case "Juan":
+			case "juan":
 				ventasJuan = ventasJuan + precioProducto;
 				contadorJuan = contadorJuan + 1;
-				document.write("El promedio de ventas de Juan es: " + (ventasJuan/contadorJuan) + "<br>");
 			break;
 
 			//MARIA
-			case"María":
+			case"maria":
 				ventasMaria = ventasMaria + precioProducto;
 				contadorMaria = contadorMaria + 1;
-				document.write("El promedio de ventas de Maria es: " + (ventasMaria/contadorMaria) + "<br>");
-				if (tipoProducto == "Perfume")
+				if (tipoProducto == "perfume")
 				{
 					cantidadPerfumesMaria = cantidadPerfumesMaria + 1;
-					document.write("Cantidad de perfumes que vendió María: " + cantidadPerfumesMaria + "<br>");
 				}
 			break;
 
 			//LUCRECIA
-			case "Lucrecia":
+			case "lucrecia":
 				ventasLucrecia = ventasLucrecia + precioProducto;
 				contadorLucrecia = contadorLucrecia + 1
-				document.write("El promedio de ventas de Maria es: " + (ventasLucrecia/contadorLucrecia) + "<br>");
 			break;
 		}
 
@@ -112,11 +108,16 @@ function mostrar()
 		{
 			precioMasBarato = precioProducto;
 			vendedorMasBarato = vendedor;
-			banderaDelPrimero == 1;
+			banderaDelPrimero = 1;
 
 		}
-		document.write("El importe mas barato es " + precioMasBarato + " y lo vendio " + vendedorMasBarato + "<br>")
 		respuesta = prompt("Desea seguir ingresando datos?");
+		respuesta = respuesta.toLowerCase();
+		while(respuesta!="si" && respuesta!="no")
+		{
+			respuesta = prompt("Error, desea seguir ingresando datos? (si o no)");
+			respuesta = respuesta.toLowerCase();
+		}
 
 	}
 
@@ -149,11 +150,11 @@ else
 {
 	if (ventasMaria > 5000)
 	{
-		comisionJuan = ventasMaria * 0.15;
+		comisionMaria = ventasMaria * 0.15;
 	}
 	else
 	{
-		comisionJuan = ventasMaria * 0.05;
+		comisionMaria = ventasMaria * 0.05;
 	}
 }
 
@@ -190,6 +191,11 @@ else
 		vendedorMasBarato = "Lucrecia";
 	}
 }
+document.write("El promedio de ventas de Juan es: " + (ventasJuan/contadorJuan) + "<br>");
+document.write("El promedio de ventas de Maria es: " + (ventasMaria/contadorMaria) + "<br>");
+document.write("Cantidad de perfumes que vendió Maria: " + cantidadPerfumesMaria + "<br>");
+document.write("El promedio de ventas de Lucrecia es: " + (ventasLucrecia/contadorLucrecia) + "<br>");
+document.write("El importe mas barato es " + precioMasBarato + " y lo vendio " + vendedorMasBarato + "<br>");
 document.write("El vendedor con menor comision es: " + vendedorMasBarato + "<br>");
 
 }
