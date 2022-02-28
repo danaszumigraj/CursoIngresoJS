@@ -31,7 +31,7 @@ function Promedio ()
 
 	resultado = ((precioUno + precioDos + precioTres) / 3);
 
-	alert("El promedio es " + resultado)
+	alert("El promedio es " + resultado);
 	
 }
 function PrecioFinal () 

@@ -30,23 +30,23 @@ function Rectangulo ()
 function Circulo () 
 {
 	var radioTerreno;
-	var circunferencia
+	var circunferencia;
 
 	radioTerreno = parseFloat(document.getElementById("txtIdRadio").value);
 
 	hiloAlambre = 3;
 	
-	circunferencia = radioTerreno * 2 * 3,14;
-	resultado = circunferencia * hiloAlambre
+	circunferencia = radioTerreno * 2 * 3.14;
+	resultado = circunferencia * hiloAlambre;
 
 	alert("La cantidad de hilos a comprar es " + resultado);
 }
 function Materiales () 
 {
 
-	var areaTerreno
-	var bolsaCemento
-	var bolsaCal
+	var areaTerreno;
+	var bolsaCemento;
+	var bolsaCal;
 
 	largoTerreno = parseFloat(document.getElementById("txtIdLargo").value);
 	anchoTerreno = parseFloat(document.getElementById("txtIdAncho").value);
@@ -59,9 +59,6 @@ function Materiales ()
 	bolsaCemento = parseInt(bolsaCemento);
 	bolsaCal = parseInt(bolsaCal);
 
-	alert("Será necesario comprar " + bolsaCemento + (" bolsa(s) de cemento y ") + bolsaCal + (" bolsa(s) de cal."))
+	alert("Será necesario comprar " + bolsaCemento + (" bolsa(s) de cemento y ") + bolsaCal + (" bolsa(s) de cal."));
 
-
-
-	
 }
